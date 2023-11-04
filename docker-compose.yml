@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres-store:
+    image: postgres
+    container_name: postgres-store
+    environment:
+      POSTGRES_DB: store
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
